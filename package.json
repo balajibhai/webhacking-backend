@@ -4,8 +4,8 @@
   "description": "node began",
   "main": "index.js",
   "scripts": {
-    "start": "node commandInj.js",
-    "dev": "nodemon commandInj.js"
+    "start": "node directory_traversal.js",
+    "dev": "nodemon directory_traversal.js"
   },
   "author": "Balaji N",
   "license": "ISC",
