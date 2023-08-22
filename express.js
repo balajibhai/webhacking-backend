@@ -48,22 +48,6 @@ app.delete("/tshirt/delete", (req, res) => {
   const selectParticular =
     "SELECT email FROM emails WHERE email = '" + email + "'";
 
-  // const unsubscribe = (endRes) => {
-  //   const mail = endRes.map((row) => row.mail);
-  //   const deleteQuery = "DELETE FROM emails WHERE email = '" + mail[0] + "';";
-  //   connection.query(deleteQuery, (error, results) => {
-  //     if (error) {
-  //       console.error("Error deleting email:", error);
-  //       return res
-  //         .status(500)
-  //         .json({ message: `Error deleting email${endRes[0].email}` });
-  //     }
-  //     return res.status(200).json({
-  //       message: `email ${endRes[0].email} unsubscribed and deleted successfully`,
-  //     });
-  //   });
-  // };
-
   connection.query(selectParticular, (error, results) => {
     const response = {};
     for (i = 0; i < results?.length; i++) {
