@@ -4,8 +4,8 @@
   "description": "node began",
   "main": "index.js",
   "scripts": {
-    "start": "node weakrandomness.js",
-    "dev": "nodemon weakrandomness.js"
+    "start": "node sessionFixation.js",
+    "dev": "nodemon sessionFixation.js"
   },
   "author": "Balaji N",
   "license": "ISC",
